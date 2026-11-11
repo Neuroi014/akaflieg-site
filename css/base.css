@@ -48,7 +48,7 @@ a:hover { color: var(--color-red); }
 
 /* ---------- トップ ---------- */
 .hero-photo { margin-inline: calc(50% - 50vw); }
-.hero-photo img { width: 100%; height: clamp(15rem, 46vw, 34rem); object-fit: cover; object-position: 50% 58%; }
+.hero-photo img { width: 100%; height: clamp(15rem, 46vw, 34rem); object-fit: cover; object-position: 50% 50%; }
 .hero-photo figcaption { max-width: calc(var(--container-max) + var(--gutter) * 2); margin-inline: auto; padding: var(--space-2) var(--gutter) 0; color: var(--color-text-muted); font-size: var(--font-size-sm); }
 .intro { display: grid; gap: var(--space-4); padding-block: var(--space-6) var(--section-gap); }
 .intro__meta { margin-bottom: var(--space-3); color: var(--color-text-muted); font-size: var(--font-size-sm); }
