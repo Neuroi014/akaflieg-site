@@ -172,3 +172,21 @@ h1, h2, h3, .info-table th, .faq dt { color: var(--color-text); }
 
 /* 実習表示に続けて置く、先生への一言（トップだけ） */
 .notice--message { padding-top: 0; padding-bottom: var(--space-3); }
+
+/* ---------- 2026-11-12 評価で見つけた点の修正 ---------- */
+/* 見出しが単語の途中で折れないようにする */
+h1, h2, h3 { word-break: auto-phrase; }
+@media (min-width: 1024px) {
+  .section { grid-template-columns: 15rem minmax(0, 1fr); column-gap: var(--space-6); }
+  .section__head h2 { font-size: 1.375rem; }
+}
+/* 色の数を減らす：見出しの下の線は紺。水色は薄い面だけに使う */
+.section__head h2::after { background: var(--color-navy); height: 2px; width: 2rem; }
+.global-nav a:hover { border-bottom-color: var(--color-border); }
+/* 本文と写真の間 */
+.prose + .photo-grid { margin-top: var(--space-4); }
+.section__lead + .list { margin-top: 0; }
+/* フッターのリンクを1行に収める */
+.site-footer nav ul { gap: 0 0.875rem; }
+.site-footer nav a { font-size: 0.8125rem; }
+@media (min-width: 768px) { .site-footer nav ul { gap: 0 var(--space-4); } .site-footer nav a { font-size: var(--font-size-sm); } }
