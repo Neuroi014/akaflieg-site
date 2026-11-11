@@ -563,3 +563,9 @@ h1, h2, h3 { text-wrap: balance; }
 time, .eyebrow, .info-table td { font-feature-settings: "palt"; }
 .eyebrow span { white-space: nowrap; }
 @media (max-width: 479px) { .eyebrow__sep { display: block; height: 0; overflow: hidden; margin: 0; } }
+
+/* 写真（活動の記録） */
+.photo-grid { display: grid; gap: var(--space-4); margin-block: var(--space-4); }
+.photo-grid img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: var(--radius-md); }
+.photo-grid figcaption { margin-top: var(--space-2); color: var(--color-text-muted); font-size: var(--font-size-sm); }
+@media (min-width: 600px) { .photo-grid { grid-template-columns: repeat(2, 1fr); } }
