@@ -507,7 +507,7 @@ a:hover {
 }
 
 /* ---------- 追加の部品 ---------- */
-body { font-variant-numeric: tabular-nums; -webkit-font-smoothing: antialiased; }
+body { -webkit-font-smoothing: antialiased; }
 .nowrap { white-space: nowrap; }
 .eyebrow { margin-bottom: var(--space-3); color: var(--color-text-muted); font-size: var(--font-size-sm); letter-spacing: 0.08em; }
 .note { color: var(--color-text-muted); font-size: var(--font-size-sm); }
@@ -535,3 +535,31 @@ body { font-variant-numeric: tabular-nums; -webkit-font-smoothing: antialiased; 
 }
 .list-note { max-width: var(--measure); margin-top: var(--space-4); }
 .figure--cycle img { margin-block: calc(var(--space-3) * -1); }
+
+/* ---------- 2026-11-11 調整：PC では見出しを左、中身を右に置く ---------- */
+.visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+.eyebrow__sep { margin-inline: 0.5em; color: var(--color-border); }
+.hero__kicker { display: block; font-size: var(--font-size-lg); letter-spacing: 0.12em; }
+.hero__name { display: block; margin-top: var(--space-1); font-size: 2.75rem; line-height: 1.15; letter-spacing: 0.01em; }
+@media (min-width: 768px) { .hero__name { font-size: 4rem; } .hero__kicker { font-size: var(--font-size-xl); } }
+
+@media (min-width: 1024px) {
+  .section { display: grid; grid-template-columns: 15rem minmax(0, 1fr); column-gap: var(--space-6); align-items: start; }
+  .section > .section__title { grid-column: 1; margin-bottom: 0; font-size: var(--font-size-xl); }
+  .section > :not(.section__title) { grid-column: 2; }
+  .section--full { display: block; }
+  .section > .info-table, .section > .figure { max-width: none; }
+  .section > .figure--cycle { max-width: 26rem; }
+  .steps { grid-template-columns: repeat(2, 1fr); }
+  .page-header { padding-bottom: var(--space-3); }
+}
+
+/* フッターのリンクは文字色にして、目立たせない */
+.site-footer a { color: var(--color-text); text-decoration-color: var(--color-border); }
+.site-footer a:hover { color: var(--color-accent); text-decoration-color: currentColor; }
+
+/* 見出しの折り返しを均等にし、日付の数字の間を詰める */
+h1, h2, h3 { text-wrap: balance; }
+time, .eyebrow, .info-table td { font-feature-settings: "palt"; }
+.eyebrow span { white-space: nowrap; }
+@media (max-width: 479px) { .eyebrow__sep { display: block; height: 0; overflow: hidden; margin: 0; } }
