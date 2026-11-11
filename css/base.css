@@ -169,3 +169,6 @@ h1, h2, h3 { line-height: 1.45; letter-spacing: 0.03em; font-feature-settings: "
 /* ---------- 文字の色：見出しと本文は黒に近い灰色。紺はロゴ・リンク・フッターだけ ---------- */
 h1, h2, h3, .info-table th, .faq dt { color: var(--color-text); }
 .global-nav a, .global-nav a:hover { color: var(--color-text); }
+
+/* 実習表示に続けて置く、先生への一言（トップだけ） */
+.notice--message { padding-top: 0; padding-bottom: var(--space-3); }
