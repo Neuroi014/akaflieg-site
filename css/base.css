@@ -143,3 +143,25 @@ figcaption { margin-top: var(--space-2); color: var(--color-text-muted); font-si
 @media (min-width: 768px) { .site-footer__inner { grid-template-columns: 1fr auto; align-items: start; } .site-footer__copy { grid-column: 1 / -1; } }
 
 [id] { scroll-margin-top: var(--space-4); }
+
+/* ---------- 2026-11-12 文字と余白の調整 ---------- */
+body { line-height: 1.8; letter-spacing: 0.03em; }
+h1, h2, h3 { line-height: 1.45; letter-spacing: 0.03em; font-feature-settings: "palt"; }
+.intro h1 { line-height: 1.5; }
+.intro h1 span { display: inline-block; }           /* 文節の途中で折り返さない */
+.intro p + p { margin-top: var(--space-3); }
+.intro__meta { margin-bottom: var(--space-2); }
+.hero-photo figcaption { padding-top: var(--space-2); }
+.intro { padding-block: var(--space-5) var(--section-gap); }
+.rows li, .news-list li { padding-block: 1.25rem; }
+.section__head h2::after { margin-top: var(--space-3); }
+.photo-grid { margin-top: 0; }
+.page-header { padding-block: var(--space-5); }
+@media (min-width: 900px) {
+  .intro { padding-top: var(--space-6); align-items: start; }
+  .page-header { padding-block: var(--space-6); }
+}
+@media (min-width: 1024px) {
+  .section { grid-template-columns: 13rem minmax(0, 1fr); column-gap: var(--space-7); }
+  .section__head h2 { font-size: var(--font-size-xl); }
+}
