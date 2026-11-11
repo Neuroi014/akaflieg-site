@@ -1,26 +1,26 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 360" role="img" font-family="Noto Sans JP, Hiragino Sans, Yu Gothic UI, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 356 290" role="img" font-family="Noto Sans JP, Hiragino Sans, Yu Gothic UI, sans-serif">
 <title>How we learn</title>
-<circle cx="180" cy="180" r="118" fill="none" stroke="#2CB9DB" stroke-width="1.5"/>
-<path d="M-6,-5 L6,0 L-6,5 Z" fill="#666666" transform="translate(249.4,84.5) rotate(36.0)"/>
-<path d="M-6,-5 L6,0 L-6,5 Z" fill="#666666" transform="translate(292.2,216.5) rotate(108.0)"/>
-<path d="M-6,-5 L6,0 L-6,5 Z" fill="#666666" transform="translate(180.0,298.0) rotate(180.0)"/>
-<path d="M-6,-5 L6,0 L-6,5 Z" fill="#666666" transform="translate(67.8,216.5) rotate(252.0)"/>
-<path d="M-6,-5 L6,0 L-6,5 Z" fill="#666666" transform="translate(110.6,84.5) rotate(324.0)"/>
-<rect x="122.0" y="39.0" width="116" height="46" rx="4" fill="#001764" stroke="#001764" stroke-width="1"/>
-<text x="180.0" y="60.0" text-anchor="middle" font-size="15" font-weight="700" fill="#FFFFFF">Learn</text>
-<text x="180.0" y="76.0" text-anchor="middle" font-size="10.5" fill="#FFFFFF">workshops</text>
-<rect x="234.2" y="120.5" width="116" height="46" rx="4" fill="#FFFFFF" stroke="#666666" stroke-width="1"/>
-<text x="292.2" y="141.5" text-anchor="middle" font-size="15" font-weight="700" fill="#222222">Design</text>
-<text x="292.2" y="157.5" text-anchor="middle" font-size="10.5" fill="#666666">drawings, numbers</text>
-<rect x="191.4" y="252.5" width="116" height="46" rx="4" fill="#FFFFFF" stroke="#666666" stroke-width="1"/>
-<text x="249.4" y="273.5" text-anchor="middle" font-size="15" font-weight="700" fill="#222222">Build</text>
-<text x="249.4" y="289.5" text-anchor="middle" font-size="10.5" fill="#666666">model gliders</text>
-<rect x="52.6" y="252.5" width="116" height="46" rx="4" fill="#FFFFFF" stroke="#666666" stroke-width="1"/>
-<text x="110.6" y="273.5" text-anchor="middle" font-size="15" font-weight="700" fill="#222222">Test</text>
-<text x="110.6" y="289.5" text-anchor="middle" font-size="10.5" fill="#666666">weight, CG, loads</text>
-<rect x="9.8" y="120.5" width="116" height="46" rx="4" fill="#FFFFFF" stroke="#666666" stroke-width="1"/>
-<text x="67.8" y="141.5" text-anchor="middle" font-size="15" font-weight="700" fill="#222222">Fly</text>
-<text x="67.8" y="157.5" text-anchor="middle" font-size="10.5" fill="#666666">check in flight</text>
-<text x="180" y="176" text-anchor="middle" font-size="13" fill="#222222" font-weight="700">Theory and</text>
-<text x="180" y="196" text-anchor="middle" font-size="13" fill="#222222" font-weight="700">practice</text>
+<ellipse cx="178" cy="155" rx="118" ry="125" fill="none" stroke="#2CB9DB" stroke-width="1.5"/>
+<path d="M-6,-5 L6,0 L-6,5 Z" fill="#666666" transform="translate(247.4,53.9) rotate(37.6)"/>
+<path d="M-6,-5 L6,0 L-6,5 Z" fill="#666666" transform="translate(290.2,193.6) rotate(107.1)"/>
+<path d="M-6,-5 L6,0 L-6,5 Z" fill="#666666" transform="translate(178.0,280.0) rotate(180.0)"/>
+<path d="M-6,-5 L6,0 L-6,5 Z" fill="#666666" transform="translate(65.8,193.6) rotate(-107.1)"/>
+<path d="M-6,-5 L6,0 L-6,5 Z" fill="#666666" transform="translate(108.6,53.9) rotate(-37.6)"/>
+<rect x="114.0" y="4.0" width="128" height="52" rx="4" fill="#001764" stroke="#001764" stroke-width="1"/>
+<text x="178.0" y="27.0" text-anchor="middle" font-size="16" font-weight="700" fill="#FFFFFF">Learn</text>
+<text x="178.0" y="46.0" text-anchor="middle" font-size="13.5" fill="#FFFFFF">workshops</text>
+<rect x="226.2" y="90.4" width="128" height="52" rx="4" fill="#FFFFFF" stroke="#666666" stroke-width="1"/>
+<text x="290.2" y="113.4" text-anchor="middle" font-size="16" font-weight="700" fill="#222222">Design</text>
+<text x="290.2" y="132.4" text-anchor="middle" font-size="13.5" fill="#666666">plans, numbers</text>
+<rect x="183.4" y="230.1" width="128" height="52" rx="4" fill="#FFFFFF" stroke="#666666" stroke-width="1"/>
+<text x="247.4" y="253.1" text-anchor="middle" font-size="16" font-weight="700" fill="#222222">Build</text>
+<text x="247.4" y="272.1" text-anchor="middle" font-size="13.5" fill="#666666">model gliders</text>
+<rect x="44.6" y="230.1" width="128" height="52" rx="4" fill="#FFFFFF" stroke="#666666" stroke-width="1"/>
+<text x="108.6" y="253.1" text-anchor="middle" font-size="16" font-weight="700" fill="#222222">Test</text>
+<text x="108.6" y="272.1" text-anchor="middle" font-size="13.5" fill="#666666">weight, CG, loads</text>
+<rect x="1.8" y="90.4" width="128" height="52" rx="4" fill="#FFFFFF" stroke="#666666" stroke-width="1"/>
+<text x="65.8" y="113.4" text-anchor="middle" font-size="16" font-weight="700" fill="#222222">Fly</text>
+<text x="65.8" y="132.4" text-anchor="middle" font-size="13.5" fill="#666666">check in flight</text>
+<text x="178" y="151" text-anchor="middle" font-size="13" fill="#222222" font-weight="700">Theory and</text>
+<text x="178" y="171" text-anchor="middle" font-size="13" fill="#222222" font-weight="700">practice</text>
 </svg>
