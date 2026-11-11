@@ -200,3 +200,12 @@ figcaption, .hero-photo figcaption {
 .hero-photo figcaption { max-width: none; width: fit-content; margin-left: max(var(--gutter), calc(50vw - var(--container-max) / 2)); margin-right: var(--gutter); }
 .photo-grid { margin-bottom: var(--space-5); }
 .figure--cycle { margin-bottom: var(--space-2); }
+
+/* ---------- 実習表示：一文はページの最上部の帯、【実習】はロゴの前 ---------- */
+.notice { padding-block: 0; background: var(--color-sky-tint); color: var(--color-text); font-size: 0.8125rem; line-height: 1.5; }
+.notice p { padding-block: var(--space-2); }
+.site-name { display: inline-flex; align-items: center; gap: var(--space-1); color: var(--color-text); text-decoration: none; }
+.site-name:hover { color: var(--color-text); }
+.site-name__prefix { font-size: var(--font-size-sm); font-weight: 700; white-space: nowrap; }
+.site-name img { margin-left: 0; }
+.message { padding-block: var(--space-3); color: var(--color-text-muted); font-size: var(--font-size-sm); }
