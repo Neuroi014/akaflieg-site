@@ -1,26 +1,26 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 360" role="img" font-family="Noto Sans JP, Hiragino Sans, Yu Gothic UI, sans-serif">
 <title>学びの進め方</title>
 <circle cx="180" cy="180" r="118" fill="none" stroke="#2CB9DB" stroke-width="1.5"/>
-<path d="M-6,-5 L6,0 L-6,5 Z" fill="#4A5568" transform="translate(249.4,84.5) rotate(36.0)"/>
-<path d="M-6,-5 L6,0 L-6,5 Z" fill="#4A5568" transform="translate(292.2,216.5) rotate(108.0)"/>
-<path d="M-6,-5 L6,0 L-6,5 Z" fill="#4A5568" transform="translate(180.0,298.0) rotate(180.0)"/>
-<path d="M-6,-5 L6,0 L-6,5 Z" fill="#4A5568" transform="translate(67.8,216.5) rotate(252.0)"/>
-<path d="M-6,-5 L6,0 L-6,5 Z" fill="#4A5568" transform="translate(110.6,84.5) rotate(324.0)"/>
+<path d="M-6,-5 L6,0 L-6,5 Z" fill="#666666" transform="translate(249.4,84.5) rotate(36.0)"/>
+<path d="M-6,-5 L6,0 L-6,5 Z" fill="#666666" transform="translate(292.2,216.5) rotate(108.0)"/>
+<path d="M-6,-5 L6,0 L-6,5 Z" fill="#666666" transform="translate(180.0,298.0) rotate(180.0)"/>
+<path d="M-6,-5 L6,0 L-6,5 Z" fill="#666666" transform="translate(67.8,216.5) rotate(252.0)"/>
+<path d="M-6,-5 L6,0 L-6,5 Z" fill="#666666" transform="translate(110.6,84.5) rotate(324.0)"/>
 <rect x="122.0" y="39.0" width="116" height="46" rx="4" fill="#001764" stroke="#001764" stroke-width="1"/>
 <text x="180.0" y="60.0" text-anchor="middle" font-size="15" font-weight="700" fill="#FFFFFF">学ぶ</text>
 <text x="180.0" y="76.0" text-anchor="middle" font-size="10.5" fill="#FFFFFF">講習会</text>
-<rect x="234.2" y="120.5" width="116" height="46" rx="4" fill="#FFFFFF" stroke="#4A5568" stroke-width="1"/>
-<text x="292.2" y="141.5" text-anchor="middle" font-size="15" font-weight="700" fill="#1B2430">設計する</text>
-<text x="292.2" y="157.5" text-anchor="middle" font-size="10.5" fill="#4A5568">図面と計算</text>
-<rect x="191.4" y="252.5" width="116" height="46" rx="4" fill="#FFFFFF" stroke="#4A5568" stroke-width="1"/>
-<text x="249.4" y="273.5" text-anchor="middle" font-size="15" font-weight="700" fill="#1B2430">作る</text>
-<text x="249.4" y="289.5" text-anchor="middle" font-size="10.5" fill="#4A5568">模型グライダー</text>
-<rect x="52.6" y="252.5" width="116" height="46" rx="4" fill="#FFFFFF" stroke="#4A5568" stroke-width="1"/>
-<text x="110.6" y="273.5" text-anchor="middle" font-size="15" font-weight="700" fill="#1B2430">試験する</text>
-<text x="110.6" y="289.5" text-anchor="middle" font-size="10.5" fill="#4A5568">重量・重心・荷重</text>
-<rect x="9.8" y="120.5" width="116" height="46" rx="4" fill="#FFFFFF" stroke="#4A5568" stroke-width="1"/>
-<text x="67.8" y="141.5" text-anchor="middle" font-size="15" font-weight="700" fill="#1B2430">飛ばす</text>
-<text x="67.8" y="157.5" text-anchor="middle" font-size="10.5" fill="#4A5568">飛行して確かめる</text>
-<text x="180" y="176" text-anchor="middle" font-size="13" fill="#1B2430" font-weight="700">理論と実践の</text>
-<text x="180" y="196" text-anchor="middle" font-size="13" fill="#1B2430" font-weight="700">往復</text>
+<rect x="234.2" y="120.5" width="116" height="46" rx="4" fill="#FFFFFF" stroke="#666666" stroke-width="1"/>
+<text x="292.2" y="141.5" text-anchor="middle" font-size="15" font-weight="700" fill="#222222">設計する</text>
+<text x="292.2" y="157.5" text-anchor="middle" font-size="10.5" fill="#666666">図面と計算</text>
+<rect x="191.4" y="252.5" width="116" height="46" rx="4" fill="#FFFFFF" stroke="#666666" stroke-width="1"/>
+<text x="249.4" y="273.5" text-anchor="middle" font-size="15" font-weight="700" fill="#222222">作る</text>
+<text x="249.4" y="289.5" text-anchor="middle" font-size="10.5" fill="#666666">模型グライダー</text>
+<rect x="52.6" y="252.5" width="116" height="46" rx="4" fill="#FFFFFF" stroke="#666666" stroke-width="1"/>
+<text x="110.6" y="273.5" text-anchor="middle" font-size="15" font-weight="700" fill="#222222">試験する</text>
+<text x="110.6" y="289.5" text-anchor="middle" font-size="10.5" fill="#666666">重量・重心・荷重</text>
+<rect x="9.8" y="120.5" width="116" height="46" rx="4" fill="#FFFFFF" stroke="#666666" stroke-width="1"/>
+<text x="67.8" y="141.5" text-anchor="middle" font-size="15" font-weight="700" fill="#222222">飛ばす</text>
+<text x="67.8" y="157.5" text-anchor="middle" font-size="10.5" fill="#666666">飛行して確かめる</text>
+<text x="180" y="176" text-anchor="middle" font-size="13" fill="#222222" font-weight="700">理論と実践の</text>
+<text x="180" y="196" text-anchor="middle" font-size="13" fill="#222222" font-weight="700">往復</text>
 </svg>

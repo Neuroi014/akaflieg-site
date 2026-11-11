@@ -165,3 +165,7 @@ h1, h2, h3 { line-height: 1.45; letter-spacing: 0.03em; font-feature-settings: "
   .section { grid-template-columns: 13rem minmax(0, 1fr); column-gap: var(--space-7); }
   .section__head h2 { font-size: var(--font-size-xl); }
 }
+
+/* ---------- 文字の色：見出しと本文は黒に近い灰色。紺はロゴ・リンク・フッターだけ ---------- */
+h1, h2, h3, .info-table th, .faq dt { color: var(--color-text); }
+.global-nav a, .global-nav a:hover { color: var(--color-text); }

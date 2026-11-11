@@ -6,13 +6,13 @@
   color-scheme: light;
 
   --color-bg: #FFFFFF;
-  --color-navy: #001764;        /* 慶應の紺：見出し、ナビゲーション、フッター */
+  --color-navy: #001764;        /* 慶應の紺：ロゴ、リンク、フッター */
   --color-red: #CF001C;         /* 慶應の赤：申し込みのボタンだけ */
   --color-red-hover: #A80017;
   --color-sky: #2CB9DB;         /* SFC の水色（キャンパスの自然、空）：細い線と印 */
   --color-sky-tint: #EAF6FA;    /* 水色を薄めた面：ページの見出し、CTA */
-  --color-text: #1B2430;        /* 本文 */
-  --color-text-muted: #4A5568;  /* 補助の文字 */
+  --color-text: #222222;        /* 本文と見出し */
+  --color-text-muted: #666666;  /* 補助の文字 */
   --color-border: #D9DEE5;      /* 区切り線 */
   --color-on-navy: #FFFFFF;
   --color-on-navy-muted: #C5CCE0;
