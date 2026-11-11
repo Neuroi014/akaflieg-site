@@ -209,3 +209,6 @@ figcaption, .hero-photo figcaption {
 .site-name__prefix { font-size: var(--font-size-sm); font-weight: 700; white-space: nowrap; }
 .site-name img { margin-left: 0; }
 .message { padding-block: var(--space-3); color: var(--color-text-muted); font-size: var(--font-size-sm); }
+
+/* 実習の一文はヘッダー（ロゴとナビゲーション）のすぐ下。全ページ同じ位置 */
+.notice { background: none; border-bottom: 1px solid var(--color-border); color: var(--color-text-muted); }
