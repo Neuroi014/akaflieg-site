@@ -1,81 +1,88 @@
 /*
- * デザインの値（CSS 変数だけを置く）。
- * 値の意味と使う所は docs/ui_design.md の「2. デザインの値」を参照。
- * ページや部品の CSS では、色・大きさ・余白を直接書かず、必ずここの変数を使う。
+ * デザインの値（CSS 変数だけを置く）。決まりは docs/ui_design.md。
+ * ページや部品の CSS では、色・大きさ・余白を直接書かず、ここの変数を使う。
  */
+@font-face {
+  font-family: "Jost";
+  src: url("../fonts/jost-500-latin.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   color-scheme: light;
 
-  /* 色 */
-  --color-bg: #FFFFFF;          /* ページの地 */
-  --color-surface: #F6F6F4;     /* 面（実習表示の帯、カード、CTA の枠、フッター） */
-  --color-text: #1A1A1A;        /* 本文・見出し */
-  --color-text-muted: #5C5C5C;  /* 補助の文字（日付、注記、実習表示） */
-  --color-border: #E2E2E0;      /* 区切り線（飾り。文字には使わない） */
-  --color-accent: #A01C2B;      /* 強調色（深い紅）。リンクとボタンだけに使う */
-  --color-accent-hover: #7D1521;/* 強調色のホバー */
-  --color-on-accent: #FFFFFF;   /* 強調色の上の文字 */
+  /* 色（ロゴの INK / CRIMSON / GREY / PAPER） */
+  --color-bg: #FBFAF7;          /* PAPER：ページの地 */
+  --color-surface: #F2EFE9;     /* 一段濃い紙：フッター、表の見出し側 */
+  --color-card: #FFFFFF;        /* カードの面 */
+  --color-ink: #0E1A24;         /* INK：文字、濃色の帯 */
+  --color-text: #0E1A24;
+  --color-text-muted: #56606A;  /* GREY：補助の文字 */
+  --color-border: #DEDAD2;      /* 区切り線 */
+  --color-accent: #A01C2B;      /* CRIMSON：ボタン、リンク、小さな印 */
+  --color-accent-hover: #7D1521;
+  --color-on-accent: #FFFFFF;
+  --color-on-ink: #FFFFFF;      /* 濃色の帯の上の文字 */
+  --color-on-ink-muted: #B4BCC4;/* 濃色の帯の上の補助の文字 */
+  --color-ink-line: #2B3945;    /* 濃色の帯の上の線 */
 
   /* 文字 */
-  --font-family-base: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Yu Gothic UI", sans-serif;
-  --font-size-sm: 0.875rem;     /* 14px 注記・日付・実習表示 */
+  --font-sans: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Yu Gothic UI", sans-serif;
+  --font-serif: "Hiragino Mincho ProN", "Yu Mincho", "YuMincho", "Noto Serif JP", serif;
+  --font-latin: "Jost", "Futura", "Century Gothic", sans-serif;
+  --font-size-xs: 0.75rem;      /* 12px 欧文のラベル */
+  --font-size-sm: 0.875rem;     /* 14px 注記・日付 */
   --font-size-base: 1rem;       /* 16px 本文 */
   --font-size-lg: 1.25rem;      /* 20px h3 */
-  --font-size-xl: 1.5rem;       /* 24px h2（PC 28px） */
-  --font-size-2xl: 2rem;        /* 32px h1（PC 40px） */
+  --font-size-xl: 1.625rem;     /* 26px h2 */
+  --font-size-2xl: 2.125rem;    /* 34px h1 */
   --font-weight-normal: 400;
   --font-weight-bold: 700;
-  --line-height-body: 1.8;
-  --line-height-heading: 1.4;
-  --letter-spacing-body: 0.02em;
-  --measure: 40rem;             /* 本文の最大幅（約 40 字） */
+  --line-height-body: 1.9;
+  --line-height-heading: 1.45;
+  --measure: 40rem;
 
   /* 余白（4 の倍数） */
-  --space-1: 0.25rem;           /* 4px */
-  --space-2: 0.5rem;            /* 8px */
-  --space-3: 1rem;              /* 16px */
-  --space-4: 1.5rem;            /* 24px */
-  --space-5: 2rem;              /* 32px */
-  --space-6: 3rem;              /* 48px */
-  --space-7: 4rem;              /* 64px */
-  --space-8: 6rem;              /* 96px */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 1rem;
+  --space-4: 1.5rem;
+  --space-5: 2rem;
+  --space-6: 3rem;
+  --space-7: 4rem;
+  --space-8: 6rem;
 
   /* 割り付け */
-  --container-max: 67.5rem;     /* 1080px */
-  --gutter: var(--space-3);     /* 左右の余白。スマホ 16px */
-  --section-gap: var(--space-5);/* セクションの上下の内側の余白。スマホ 32px（セクションの間は 2 倍） */
+  --container-max: 67.5rem;
+  --gutter: var(--space-4);     /* スマホ 24px */
+  --section-gap: var(--space-6);
 
   /* 形 */
-  --radius-sm: 6px;             /* ボタン */
-  --radius-md: 8px;             /* カード、CTA の枠、図の枠 */
+  --radius: 2px;
   --border-width: 1px;
   --focus-width: 2px;
-  --focus-offset: 2px;
-  --tap-min: 3rem;              /* 48px ボタンの最小の高さ */
-  --tap-min-nav: 2.75rem;       /* 44px ナビゲーションの項目の最小の高さ */
+  --focus-offset: 3px;
+  --tap-min: 3.25rem;           /* 52px ボタン */
+  --tap-min-nav: 2.75rem;       /* 44px ナビゲーション */
 
-  /* 動き */
-  --duration: 150ms;
+  --duration: 180ms;
 }
 
 @media (min-width: 768px) {
   :root {
-    --gutter: var(--space-4);   /* 24px */
-    --section-gap: var(--space-6);   /* 48px */
-    --font-size-xl: 1.75rem;    /* 28px */
-    --font-size-2xl: 2.5rem;    /* 40px */
+    --gutter: var(--space-5);
+    --section-gap: var(--space-7);
+    --font-size-xl: 1.875rem;   /* 30px */
+    --font-size-2xl: 2.75rem;   /* 44px */
   }
 }
 
 @media (min-width: 1024px) {
-  :root {
-    --gutter: var(--space-5);   /* 32px */
-    --section-gap: var(--space-7);   /* 64px */
-  }
+  :root { --section-gap: var(--space-8); }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  :root {
-    --duration: 0ms;
-  }
+  :root { --duration: 0ms; }
 }

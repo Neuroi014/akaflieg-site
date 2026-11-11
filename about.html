@@ -6,17 +6,17 @@
   <title>【実習】学術飛行サークル - Akaflieg｜サークル概要</title>
   <meta name="description" content="学術飛行サークル - Akaflieg の基本情報、目的、名前の由来、実機についての方針、沿革を掲載しています。">
   <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="img/favicon-32.png" sizes="32x32">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+  <link rel="preload" href="fonts/jost-500-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="css/tokens.css">
   <link rel="stylesheet" href="css/base.css">
 </head>
 <body>
   <a class="skip-link" href="#main">本文へ移動</a>
-  <div class="notice">
-    <p class="container">本サイトは講義課題として制作したものです。</p>
-  </div>
   <header class="site-header">
     <div class="container site-header__inner">
-      <a class="site-name" href="index.html"><span class="site-name__prefix">【実習】</span>学術飛行サークル - Akaflieg</a>
+      <a class="site-name" href="index.html"><img src="img/logo-compact.svg" width="1475" height="524" alt="学術飛行サークル - Akaflieg"></a>
       <nav class="global-nav" aria-label="メインメニュー">
         <ul>
           <li><a href="index.html">トップ</a></li>
@@ -31,13 +31,15 @@
 
   <main id="main">
     <div class="container">
+      <p class="notice"><span class="notice__tag">実習</span>本サイトは講義課題として制作したものです。</p>
       <header class="page-header">
+        <p class="label-en">About</p>
         <h1>サークル概要</h1>
         <p class="page-header__lead">2026年4月1日に設立した、SFCの学生によるSFCのための団体です。会員が自主的に企画・運営しています。</p>
       </header>
 
       <section class="section" aria-labelledby="basic-title">
-        <h2 class="section__title" id="basic-title">基本情報</h2>
+        <div class="section__head"><p class="label-en">Profile</p><h2 id="basic-title">基本情報</h2></div>
         <table class="info-table">
           <tbody>
             <tr><th scope="row">名称</th><td>学術飛行サークル - Akaflieg</td></tr>
@@ -53,7 +55,7 @@
       </section>
 
       <section class="section" aria-labelledby="purpose-title">
-        <h2 class="section__title" id="purpose-title">目的</h2>
+        <div class="section__head"><p class="label-en">Purpose</p><h2 id="purpose-title">目的</h2></div>
         <div class="prose">
           <p>航空機の設計と製作を題材に、学生が主体となって航空工学の基礎（力学・空気力学・構造・材料）を学び合う場を、SFCにつくります。</p>
           <p>図面を描くこと、手を動かして作ること、実際に飛ばして確かめること。この往復で知識と技能を積み上げます。設計・製作に加えて、組織運営・広報・デザインまで含めて航空を学びます。</p>
@@ -61,7 +63,7 @@
       </section>
 
       <section class="section" aria-labelledby="name-title">
-        <h2 class="section__title" id="name-title">名前の由来</h2>
+        <div class="section__head"><p class="label-en">Name</p><h2 id="name-title">名前の由来</h2></div>
         <div class="prose">
           <p>Akaflieg（アカフリーク）は、ドイツ語の Akademische Fliegergruppe（学術飛行団体）の略称です。1920年代にドイツの工科大学で生まれた学生団体で、学生が自ら航空機を研究し、設計し、製作する伝統を一世紀にわたって受け継いでいます。</p>
           <p>本会はこの考え方にならい、標語「Forschen. Bauen. Fliegen.（研究し、造り、飛ぶ）」を掲げています。本会の「飛ぶ」は、模型飛行機の飛行を指します。</p>
@@ -70,7 +72,7 @@
       </section>
 
       <section class="section" aria-labelledby="policy-title">
-        <h2 class="section__title" id="policy-title">実機についての方針</h2>
+        <div class="section__head"><p class="label-en">Policy</p><h2 id="policy-title">実機についての方針</h2></div>
         <div class="prose">
           <p>実機（人が乗る航空機）の飛行は、本会の活動に含めません。本年度の実機に関する活動は、既存の滑空機の文献調査と、概念設計の演習までです。</p>
           <p>実機の製作は、資金・作業場所・安全手順が整い、本会が主体となって計画できる段階で、必要な届出をしたうえで検討します。製作した機体を本会の活動として飛行させることはありません。</p>
@@ -78,7 +80,7 @@
       </section>
 
       <section class="section" aria-labelledby="history-title">
-        <h2 class="section__title" id="history-title">沿革</h2>
+        <div class="section__head"><p class="label-en">History</p><h2 id="history-title">沿革</h2></div>
         <ul class="news-list">
           <li><time datetime="2026-04-01">2026年4月1日</time><p>設立</p></li>
           <li><time>2026年春</time><p>活動計画の策定、Discordサーバーの構築、会員の募集</p></li>
@@ -88,14 +90,13 @@
         </ul>
       </section>
 
-      <section class="section section--full" aria-labelledby="cta-title">
-        <div class="cta">
-          <div>
-            <h2 id="cta-title">参加を考えている方へ</h2>
-            <p>航空の知識は問いません。まずはDiscordで、気になることを聞いてください。</p>
-          </div>
-          <a class="button button--primary" href="contact.html#apply">参加について相談する</a>
+      <section class="cta band" aria-labelledby="cta-title">
+        <div>
+          <p class="label-en">Join us</p>
+          <h2 id="cta-title">参加を考えている方へ</h2>
+          <p>航空の知識は問いません。まずはDiscordで、気になることを聞いてください。</p>
         </div>
+        <a class="button button--primary" href="contact.html#apply">参加について相談する</a>
       </section>
     </div>
   </main>
@@ -103,6 +104,7 @@
   <footer class="site-footer">
     <div class="container site-footer__inner">
       <div>
+        <img class="site-footer__logo" src="img/logo-compact.svg" width="1475" height="524" alt="">
         <p class="site-footer__name">学術飛行サークル - Akaflieg</p>
         <p class="site-footer__note">登録学生団体（未公認）／湘南藤沢キャンパス（SFC）</p>
         <p class="site-footer__note"><a href="https://docs.google.com/document/d/1_DWPSketG-arMbSf_roG-cD4lnGrzb0H-BCRAZqMWVQ/edit?usp=sharing">個人情報保護方針</a></p>
@@ -116,7 +118,7 @@
           <li><a href="contact.html">お問い合わせ</a></li>
         </ul>
       </nav>
-      <p class="site-footer__note">© 2026 学術飛行サークル - Akaflieg</p>
+      <p class="site-footer__copy">© 2026 Akaflieg</p>
     </div>
   </footer>
 </body>
