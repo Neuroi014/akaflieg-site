@@ -190,3 +190,13 @@ h1, h2, h3 { word-break: auto-phrase; }
 .site-footer nav ul { gap: 0 0.875rem; }
 .site-footer nav a { font-size: 0.8125rem; }
 @media (min-width: 768px) { .site-footer nav ul { gap: 0 var(--space-4); } .site-footer nav a { font-size: var(--font-size-sm); } }
+
+/* 画像の説明：本文より小さく、画像のすぐ下に付け、左に細い線を置いて本文と区別する */
+figcaption, .hero-photo figcaption {
+  margin-top: var(--space-2); padding: 0 0 0 var(--space-2);
+  border-left: 2px solid var(--color-border);
+  color: var(--color-text-muted); font-size: 0.8125rem; line-height: 1.5; letter-spacing: 0.02em;
+}
+.hero-photo figcaption { max-width: none; width: fit-content; margin-left: max(var(--gutter), calc(50vw - var(--container-max) / 2)); margin-right: var(--gutter); }
+.photo-grid { margin-bottom: var(--space-5); }
+.figure--cycle { margin-bottom: var(--space-2); }
