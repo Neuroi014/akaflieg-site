@@ -8,7 +8,9 @@
   <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
   <link rel="icon" href="img/favicon-32.png" sizes="32x32">
   <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-  <link rel="preload" href="fonts/jost-500-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/tokens.css">
   <link rel="stylesheet" href="css/base.css">
 </head>
@@ -20,7 +22,7 @@
       <nav class="global-nav" aria-label="メインメニュー">
         <ul>
           <li><a href="index.html">トップ</a></li>
-          <li><a href="about.html">サークル概要</a></li>
+          <li><a href="about.html">概要</a></li>
           <li><a href="activities.html" aria-current="page">活動内容</a></li>
           <li><a href="join.html">参加案内</a></li>
           <li><a href="contact.html">お問い合わせ</a></li>
@@ -31,15 +33,14 @@
 
   <main id="main">
     <div class="container">
-      <p class="notice"><span class="notice__tag">実習</span>本サイトは講義課題として制作したものです。</p>
+      <p class="notice">本サイトは講義課題として制作したものです。</p>
       <header class="page-header">
-        <p class="label-en">Activities</p>
         <h1>活動内容</h1>
         <p class="page-header__lead">講習会で学び、模型飛行機を設計して作り、飛ばして確かめます。2026年度の活動は次の4つです。</p>
       </header>
 
       <section class="section" aria-labelledby="cycle-title">
-        <div class="section__head"><p class="label-en">Method</p><h2 id="cycle-title">学びの進め方</h2></div>
+        <div class="section__head"><h2 id="cycle-title">学びの進め方</h2></div>
         <figure class="figure figure--cycle">
           <img src="img/learning-cycle.svg" width="360" height="360" alt="学びの進め方の図。講習会で学ぶ、設計する、作る、地上で試験する、飛ばして確かめる、の5つを順に回り、また講習会に戻る。">
           <figcaption>理論と実践を往復して、知識と技能を積み上げます。</figcaption>
@@ -47,7 +48,7 @@
       </section>
 
       <section class="section" aria-labelledby="list-title">
-        <div class="section__head"><p class="label-en">Program</p><h2 id="list-title">2026年度の活動</h2></div>
+        <div class="section__head"><h2 id="list-title">2026年度の活動</h2></div>
         <div class="stack">
           <div class="prose">
             <h3>講習会（学内）</h3>
@@ -70,7 +71,7 @@
       </section>
 
       <section class="section" id="report-0712" aria-labelledby="report-title">
-        <div class="section__head"><p class="label-en">Report</p><h2 id="report-title">活動の記録</h2></div>
+        <div class="section__head"><h2 id="report-title">活動の記録</h2></div>
         <div class="prose">
           <h3>滑空機の組立・分解講習会に参加（2026年7月12日）</h3>
           <p>他大学の学生チームと合同で開かれた、滑空機の組立と分解の講習会に、本会から4名が参加しました。主翼や胴体を実際に手で扱い、機体の構造と、組み立ての手順を学びました。飛行はしていません。</p>
@@ -85,11 +86,11 @@
             <figcaption>主翼の骨組み。リブと桁の構造が見える</figcaption>
           </figure>
         </div>
-        <p><a class="text-link" href="https://x.com/sshinohe/status/2076274523171889657">当日の様子を伝えるXの投稿を見る</a></p>
+        <p><a href="https://x.com/sshinohe/status/2076274523171889657">当日の様子を伝えるXの投稿を見る</a></p>
       </section>
 
       <section class="section" aria-labelledby="plan-title">
-        <div class="section__head"><p class="label-en">Schedule</p><h2 id="plan-title">今年度の予定</h2></div>
+        <div class="section__head"><h2 id="plan-title">今年度の予定</h2></div>
         <table class="info-table">
           <tbody>
             <tr><th scope="row">秋</th><td>会規則の整備と総会／安全講習と講習会の開始／模型グライダーの設計／飛行場所の候補選びと、管理規則・法令の確認</td></tr>
@@ -99,7 +100,7 @@
       </section>
 
       <section class="section" aria-labelledby="safety-title">
-        <div class="section__head"><p class="label-en">Safety</p><h2 id="safety-title">安全のための手順</h2></div>
+        <div class="section__head"><h2 id="safety-title">安全のための手順</h2></div>
         <p class="section__lead">安全を最優先に、段階を踏んで進めます。模型機を飛ばす日は、次の順で行います。</p>
         <ol class="list">
           <li><strong>リスクの評価</strong>：新しい場所や機体では、周囲の人・建物・道路・樹木・風を洗い出し、対策を決めます。</li>
@@ -111,9 +112,8 @@
         <p class="note list-note">航空法、小型無人機等飛行禁止法、電波法と、飛行場所の管理規則に従います。</p>
       </section>
 
-      <section class="cta band" aria-labelledby="cta-title">
+      <section class="cta" aria-labelledby="cta-title">
         <div>
-          <p class="label-en">Join us</p>
           <h2 id="cta-title">参加を考えている方へ</h2>
           <p>航空の知識は問いません。まずはDiscordで、気になることを聞いてください。</p>
         </div>
@@ -125,7 +125,6 @@
   <footer class="site-footer">
     <div class="container site-footer__inner">
       <div>
-        <img class="site-footer__logo" src="img/logo-compact.svg" width="1475" height="524" alt="">
         <p class="site-footer__name">学術飛行サークル - Akaflieg</p>
         <p class="site-footer__note">登録学生団体（未公認）／湘南藤沢キャンパス（SFC）</p>
         <p class="site-footer__note"><a href="https://docs.google.com/document/d/1_DWPSketG-arMbSf_roG-cD4lnGrzb0H-BCRAZqMWVQ/edit?usp=sharing">個人情報保護方針</a></p>
@@ -133,13 +132,13 @@
       <nav aria-label="サイトマップ">
         <ul>
           <li><a href="index.html">トップ</a></li>
-          <li><a href="about.html">サークル概要</a></li>
+          <li><a href="about.html">概要</a></li>
           <li><a href="activities.html">活動内容</a></li>
           <li><a href="join.html">参加案内</a></li>
           <li><a href="contact.html">お問い合わせ</a></li>
         </ul>
       </nav>
-      <p class="site-footer__copy">© 2026 Akaflieg</p>
+      <p class="site-footer__copy">© 2026 学術飛行サークル - Akaflieg</p>
     </div>
   </footer>
 </body>

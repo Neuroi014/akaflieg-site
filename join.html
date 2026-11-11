@@ -8,7 +8,9 @@
   <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
   <link rel="icon" href="img/favicon-32.png" sizes="32x32">
   <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-  <link rel="preload" href="fonts/jost-500-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/tokens.css">
   <link rel="stylesheet" href="css/base.css">
 </head>
@@ -20,7 +22,7 @@
       <nav class="global-nav" aria-label="メインメニュー">
         <ul>
           <li><a href="index.html">トップ</a></li>
-          <li><a href="about.html">サークル概要</a></li>
+          <li><a href="about.html">概要</a></li>
           <li><a href="activities.html">活動内容</a></li>
           <li><a href="join.html" aria-current="page">参加案内</a></li>
           <li><a href="contact.html">お問い合わせ</a></li>
@@ -31,16 +33,15 @@
 
   <main id="main">
     <div class="container">
-      <p class="notice"><span class="notice__tag">実習</span>本サイトは講義課題として制作したものです。</p>
+      <p class="notice">本サイトは講義課題として制作したものです。</p>
       <header class="page-header">
-        <p class="label-en">Join</p>
         <h1>参加案内</h1>
         <p class="page-header__lead">航空の専門知識は問いません。設計・製作のほか、広報・デザイン・組織運営で関わりたい人も歓迎します。</p>
       </header>
 
       <section class="section" aria-labelledby="flow-title">
-        <div class="section__head"><p class="label-en">Steps</p><h2 id="flow-title">参加までの流れ</h2></div>
-        <ol class="steps">
+        <div class="section__head"><h2 id="flow-title">参加までの流れ</h2></div>
+        <ol class="rows steps">
           <li><h3>Discordに参加する</h3><p>本会のDiscordサーバーに入ります。連絡と議論の中心はDiscordです。</p></li>
           <li><h3>相談する</h3><p>活動の内容や進め方について、気になることを聞いてください。</p></li>
           <li><h3>入会する</h3><p>手続きは代表から案内します。</p></li>
@@ -49,7 +50,7 @@
       </section>
 
       <section class="section" aria-labelledby="info-title">
-        <div class="section__head"><p class="label-en">Details</p><h2 id="info-title">活動の場所と会費</h2></div>
+        <div class="section__head"><h2 id="info-title">活動の場所と会費</h2></div>
         <table class="info-table">
           <tbody>
             <tr><th scope="row">対象</th><td>SFCの学生</td></tr>
@@ -62,7 +63,7 @@
       </section>
 
       <section class="section" aria-labelledby="faq-title">
-        <div class="section__head"><p class="label-en">FAQ</p><h2 id="faq-title">よくある質問</h2></div>
+        <div class="section__head"><h2 id="faq-title">よくある質問</h2></div>
         <dl class="faq">
           <dt>航空の知識がなくても参加できますか。</dt>
           <dd>できます。基礎は講習会で、会員どうしで学びます。</dd>
@@ -75,9 +76,8 @@
         </dl>
       </section>
 
-      <section class="cta band" aria-labelledby="cta-title">
+      <section class="cta" aria-labelledby="cta-title">
         <div>
-          <p class="label-en">Join us</p>
           <h2 id="cta-title">参加を考えている方へ</h2>
           <p>航空の知識は問いません。まずはDiscordで、気になることを聞いてください。</p>
         </div>
@@ -89,7 +89,6 @@
   <footer class="site-footer">
     <div class="container site-footer__inner">
       <div>
-        <img class="site-footer__logo" src="img/logo-compact.svg" width="1475" height="524" alt="">
         <p class="site-footer__name">学術飛行サークル - Akaflieg</p>
         <p class="site-footer__note">登録学生団体（未公認）／湘南藤沢キャンパス（SFC）</p>
         <p class="site-footer__note"><a href="https://docs.google.com/document/d/1_DWPSketG-arMbSf_roG-cD4lnGrzb0H-BCRAZqMWVQ/edit?usp=sharing">個人情報保護方針</a></p>
@@ -97,13 +96,13 @@
       <nav aria-label="サイトマップ">
         <ul>
           <li><a href="index.html">トップ</a></li>
-          <li><a href="about.html">サークル概要</a></li>
+          <li><a href="about.html">概要</a></li>
           <li><a href="activities.html">活動内容</a></li>
           <li><a href="join.html">参加案内</a></li>
           <li><a href="contact.html">お問い合わせ</a></li>
         </ul>
       </nav>
-      <p class="site-footer__copy">© 2026 Akaflieg</p>
+      <p class="site-footer__copy">© 2026 学術飛行サークル - Akaflieg</p>
     </div>
   </footer>
 </body>

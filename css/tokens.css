@@ -1,50 +1,32 @@
 /*
  * デザインの値（CSS 変数だけを置く）。決まりは docs/ui_design.md。
- * ページや部品の CSS では、色・大きさ・余白を直接書かず、ここの変数を使う。
+ * 色は SFC 25周年ロゴのガイドラインにある値から取った（紺・赤・水色）。
  */
-@font-face {
-  font-family: "Jost";
-  src: url("../fonts/jost-500-latin.woff2") format("woff2");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
 :root {
   color-scheme: light;
 
-  /* 色（ロゴの INK / CRIMSON / GREY / PAPER） */
-  --color-bg: #FBFAF7;          /* PAPER：ページの地 */
-  --color-surface: #F2EFE9;     /* 一段濃い紙：フッター、表の見出し側 */
-  --color-card: #FFFFFF;        /* カードの面 */
-  --color-ink: #0E1A24;         /* INK：文字、濃色の帯 */
-  --color-text: #0E1A24;
-  --color-text-muted: #56606A;  /* GREY：補助の文字 */
-  --color-border: #DEDAD2;      /* 区切り線 */
-  --color-accent: #A01C2B;      /* CRIMSON：ボタン、リンク、小さな印 */
-  --color-accent-hover: #7D1521;
-  --color-on-accent: #FFFFFF;
-  --color-on-ink: #FFFFFF;      /* 濃色の帯の上の文字 */
-  --color-on-ink-muted: #B4BCC4;/* 濃色の帯の上の補助の文字 */
-  --color-ink-line: #2B3945;    /* 濃色の帯の上の線 */
+  --color-bg: #FFFFFF;
+  --color-navy: #001764;        /* 慶應の紺：見出し、ナビゲーション、フッター */
+  --color-red: #CF001C;         /* 慶應の赤：申し込みのボタンだけ */
+  --color-red-hover: #A80017;
+  --color-sky: #2CB9DB;         /* SFC の水色（キャンパスの自然、空）：細い線と印 */
+  --color-sky-tint: #EAF6FA;    /* 水色を薄めた面：ページの見出し、CTA */
+  --color-text: #1B2430;        /* 本文 */
+  --color-text-muted: #4A5568;  /* 補助の文字 */
+  --color-border: #D9DEE5;      /* 区切り線 */
+  --color-on-navy: #FFFFFF;
+  --color-on-navy-muted: #C5CCE0;
 
-  /* 文字 */
-  --font-sans: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Yu Gothic UI", sans-serif;
-  --font-serif: "Hiragino Mincho ProN", "Yu Mincho", "YuMincho", "Noto Serif JP", serif;
-  --font-latin: "Jost", "Futura", "Century Gothic", sans-serif;
-  --font-size-xs: 0.75rem;      /* 12px 欧文のラベル */
-  --font-size-sm: 0.875rem;     /* 14px 注記・日付 */
-  --font-size-base: 1rem;       /* 16px 本文 */
-  --font-size-lg: 1.25rem;      /* 20px h3 */
-  --font-size-xl: 1.625rem;     /* 26px h2 */
-  --font-size-2xl: 2.125rem;    /* 34px h1 */
-  --font-weight-normal: 400;
-  --font-weight-bold: 700;
+  --font-sans: "Noto Sans JP", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic UI", sans-serif;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;     /* 18px h3 */
+  --font-size-xl: 1.5rem;       /* 24px h2 */
+  --font-size-2xl: 1.75rem;     /* 28px h1 */
   --line-height-body: 1.9;
-  --line-height-heading: 1.45;
+  --line-height-heading: 1.5;
   --measure: 40rem;
 
-  /* 余白（4 の倍数） */
   --space-1: 0.25rem;
   --space-2: 0.5rem;
   --space-3: 1rem;
@@ -54,35 +36,16 @@
   --space-7: 4rem;
   --space-8: 6rem;
 
-  /* 割り付け */
   --container-max: 67.5rem;
-  --gutter: var(--space-4);     /* スマホ 24px */
+  --gutter: var(--space-4);
   --section-gap: var(--space-6);
 
-  /* 形 */
-  --radius: 2px;
-  --border-width: 1px;
-  --focus-width: 2px;
-  --focus-offset: 3px;
-  --tap-min: 3.25rem;           /* 52px ボタン */
-  --tap-min-nav: 2.75rem;       /* 44px ナビゲーション */
-
-  --duration: 180ms;
+  --radius: 4px;
+  --tap-min: 3.25rem;
+  --tap-min-nav: 2.75rem;
+  --duration: 150ms;
 }
-
 @media (min-width: 768px) {
-  :root {
-    --gutter: var(--space-5);
-    --section-gap: var(--space-7);
-    --font-size-xl: 1.875rem;   /* 30px */
-    --font-size-2xl: 2.75rem;   /* 44px */
-  }
+  :root { --gutter: var(--space-5); --section-gap: var(--space-7); --font-size-xl: 1.75rem; --font-size-2xl: 2.25rem; }
 }
-
-@media (min-width: 1024px) {
-  :root { --section-gap: var(--space-8); }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  :root { --duration: 0ms; }
-}
+@media (prefers-reduced-motion: reduce) { :root { --duration: 0ms; } }
